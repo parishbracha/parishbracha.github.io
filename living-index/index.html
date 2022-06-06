@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parish Bracha</title>
+    <link href="../styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="welcome">
+        <h1>Parish Bracha</h1>
+        <div>
+            <p>Neurobiology || Philosophy || Music</p>
+            <p style="padding: 50px 0px;">A living index of my research and creative work</p>
+        </div>
+    </div>
+    <div class="everything">
+        <div class="dropdown">
+            <div class="filter-button"><button onclick="myFunction()" class="dropbtn button">filter</button></div>
+            <div id="myDropdown" class="dropdown-content button">
+                <a class="btn active" onclick="filterSelection('all')" href="#">all</a>
+                <a class="btn" onclick="filterSelection('research')" href="#">research</a>
+                <a class="btn" onclick="filterSelection('project')" href="#">projects</a>
+                <a class="btn" onclick="filterSelection('teaching')" href="#">teaching</a>
+            </div>
+        </div>
+        <div class="accordion_container">
+            <div class="filterDiv research">
+                <div class="index-list accordion_head">
+                    <a>
+                        <p>ISEA 2022</p>
+                        <p>Short Paper</p>
+                        <p>Designer</p>
+                        <p>2022</p>
+                        <span class="plusminus">+</span>
+                    </a>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                    <p>Short paper called <em>Codex Endogenous: Designing Interactive Self Data Visualization Tool for
+                            Trauma Impacted Individuals</em>. This paper proposes the use of a data visualization tool
+                        for patients who are in therapy for PTSD. The paper speculates on future possibilities in the
+                        use of a novel method combining <em>the quantified self</em>, journaling, and data
+                        visualization.</p>
+                    <div class="button-zone">
+                        <a href="#" target="_blank" class="button">more info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../main.js"></script>
+
+</html>
