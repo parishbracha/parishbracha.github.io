@@ -34,13 +34,9 @@ body {
 canvas{
     width: 80%;
     height: 75%;
-    background-color: #111111;
 }
 
 .everything {
-    max-width: 60%;
-    margin: 75px auto 50px;
-    position: relative;
 }
 
 .welcome {
@@ -56,6 +52,8 @@ canvas{
 }
 
 .dropbtn {
+    font-family: Helvetica Neue Light;
+    background-color: transparent;
     color: #111111;
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, .25);
@@ -118,7 +116,6 @@ canvas{
     column-gap: 1em;
     padding: .5em 0em;
     color: #111111;
-    font-size: smaller;
 }
 
 .index-list {
@@ -128,7 +125,6 @@ canvas{
 }
 
 .index-list p{
-    font-size: small;
 }
 
 a {
@@ -174,7 +170,7 @@ ul {
 .accordion_body p {
     padding: 18px 5px;
     margin: 0px;
-    font-size: small;
+    font-size: 1.5rem;
 }
 
 a.button{

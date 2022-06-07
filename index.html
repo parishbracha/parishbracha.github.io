@@ -62,13 +62,13 @@
      * KEYS
      * s                   : save png
      */
-    'use strict';
+    // 'use strict';
 
-    var tileCount = 20;
+    var tileCount = 30;
 
     var moduleColor;
     var moduleAlpha = 180;
-    var maxDistance = 500;
+    var maxDistance = 800;
 
     function setup() {
 
@@ -95,10 +95,16 @@
                 pop();
             }
         }
+
+        
     }
 
     function keyReleased() {
         if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
+    }
+
+    function windowResized(){
+        createCanvas(windowWidth * .9, windowHeight*.75)
     }
 </script>
 
