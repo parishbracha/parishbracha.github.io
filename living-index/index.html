@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         main {
-            max-width: 60%;
+            padding-left: 10%;
+            width: 90%;
             margin: auto;
         }
 
@@ -25,15 +27,29 @@
 
         @media only screen and (max-width: 600px) {
             main {
-                max-width: 90%;
+                padding-left: 0;
+                margin: 2.5%;
             }
 
             body {
                 font-size: 1rem;
+                width: 100%;
             }
 
             .accordion_body p {
                 font-size: 1rem;
+            }
+
+            #living-index p{
+                font-size: 2rem;
+            }
+
+            .welcome{
+                padding-top: 50;
+            }
+
+            h1{
+                margin: 0;
             }
         }
     </style>
@@ -48,7 +64,7 @@
             <h1>Parish Bracha</h1>
             <div>
                 <p>Neurobiology || Philosophy || Music</p>
-                <p style="padding: 50px 0px; font-size: 2.5rem; font-family: 'Caudex', serif;">A living index of my
+                <p id="living-index" style="padding: 50px 0px; font-size: 2.5rem; font-family: 'Caudex', serif;">A living index of my
                     research
                     and creative work</p>
             </div>

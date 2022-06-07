@@ -19,7 +19,6 @@
 h1{
     font-family: 'Caudex', serif;
     font-size: 6rem;
-    margin: 10px 0;
     line-height: 3.5rem;
 }
 body {
@@ -31,7 +30,6 @@ body {
     
     width: 90%;
     margin: auto;
-    padding-top: 100px;
 }
 
 #sketch{
@@ -45,6 +43,7 @@ body {
 
 .welcome h1 {
     font-size: 2.5em;
+    margin: 20px 0;
 }
 
 .filter-button{
@@ -220,16 +219,17 @@ a.button:hover{
 @media only screen and (max-width: 600px) {
 
     body{
-        padding: 10px;
+        padding: 5px;
     }
     body{
         font-size: 1rem;
     }
     #hello{
-        width: 90%;
+        width: 100%;
     }
 
-    h1{
+    .welcome h1{
+        margin: 0;
         font-size: 3.2rem;
     }
     
