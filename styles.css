@@ -113,7 +113,7 @@ canvas{
 
 .index-list a {
     display: grid;
-    grid-template-columns: minmax(3em, 2fr) minmax(6em, 3fr) minmax(5em, 2fr) 1fr 1fr;
+    grid-template-columns: minmax(3em, 2fr) minmax(6em, 3fr) minmax(5em, 2fr);
     align-items: baseline;
     column-gap: 1em;
     padding: .5em 0em;
