@@ -18,8 +18,8 @@
 
 h1{
     font-family: 'Caudex', serif;
-    font-size: 4rem;
-    margin: 0;
+    font-size: 6rem;
+    margin: 10px 0;
     line-height: 3.5rem;
 }
 body {
@@ -27,13 +27,14 @@ body {
     font-weight: 100;
     background-color: #FCFCFC;
     color: #111111;
-    font-size: 1.5rem;
-    padding-left: 20px;
+    font-size: 2rem;
+    
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
 }
 
-canvas{
-    width: 80%;
-    height: 75%;
+#sketch{
 }
 
 .everything {
@@ -190,7 +191,7 @@ a.button:hover{
 }
 
 #hello{
-    max-width: 580px;
+    width: 1200px;
 }
 
 .here{
@@ -209,9 +210,27 @@ a.button:hover{
 }
 
 #intro{
-    padding: 20px 20px 20px 0px;
+    padding-bottom: 20px;
 }
 
 #links{
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        padding: 10px;
+    }
+    body{
+        font-size: 1rem;
+    }
+    #hello{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 3.2rem;
+    }
+    
 }

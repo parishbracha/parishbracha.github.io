@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parish Bracha</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+
+
+    <style>
+        main {
+            padding: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main{
+                padding: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,89 +39,15 @@
             </div>
         </section>
         <section>
-            <div id="sketch"></div>
+            <div width="95%" height="75%" id="sketch"></div>
         </section>
         <section id="links">
-            <p id="hello">Welcome to my site. You can find a living index of my research and creative work <a class="here"
-                    href="living-index/index.html">here</a>. You can learn more about my professional work by viewing my CV <a class="here"
-                    href="cv/index.html">here</a>.</p>
-            <p id ="email">parishbracha@gmail.com</p>
+            <p id="hello">Welcome to my site. You can find a living index of my research and creative work <a
+                    class="here" href="living-index/index.html">here</a>. You can learn more about my professional work
+                by viewing my CV <a class="here" href="cv/index.html">here</a>.</p>
+            <p id="email">parishbracha@gmail.com</p>
         </section>
     </main>
 </body>
-<script>
-    // P_2_1_2_03
-    //
-    // Generative Gestaltung – Creative Coding im Web
-    // ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
-    // Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
-    // with contributions by Joey Lee and Niels Poldervaart
-    // Copyright 2018
-    //
-    // http://www.generative-gestaltung.de
-    //
-    // Licensed under the Apache License, Version 2.0 (the "License");
-    // you may not use this file except in compliance with the License.
-    // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-    // Unless required by applicable law or agreed to in writing, software
-    // distributed under the License is distributed on an "AS IS" BASIS,
-    // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    // See the License for the specific language governing permissions and
-    // limitations under the License.
-
-    /**
-     * changing size of circles in a rad grid depending the mouseposition
-     *
-     * MOUSE
-     * position x/y        : module size and offset z
-     *
-     * KEYS
-     * s                   : save png
-     */
-    // 'use strict';
-
-    var tileCount = 30;
-
-    var moduleColor;
-    var moduleAlpha = 180;
-    var maxDistance = 800;
-
-    function setup() {
-
-        var cnv = createCanvas(windowWidth * .9, windowHeight*.75);
-        cnv.parent("sketch");
-
-        noFill();
-        strokeWeight(3);
-        moduleColor = color(0, 0, 0, moduleAlpha);
-    }
-
-    function draw() {
-        clear();
-
-        stroke(moduleColor);
-
-        for (var gridY = 0; gridY < width; gridY += 25) {
-            for (var gridX = 0; gridX < height; gridX += 25) {
-                var diameter = dist(mouseX, mouseY, gridX, gridY);
-                diameter = diameter / maxDistance * 40;
-                push();
-                translate(gridX, gridY, diameter * 5);
-                rect(0, 0, diameter, diameter); // also nice: ellipse(...)
-                pop();
-            }
-        }
-
-        
-    }
-
-    function keyReleased() {
-        if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
-    }
-
-    function windowResized(){
-        createCanvas(windowWidth * .9, windowHeight*.75)
-    }
-</script>
 
 </html>
