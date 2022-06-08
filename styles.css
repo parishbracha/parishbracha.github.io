@@ -26,8 +26,7 @@ body {
     font-weight: 100;
     background-color: #FCFCFC;
     color: #111111;
-    font-size: 2rem;
-    
+    font-size: 1.5rem;
     width: 90%;
     margin: auto;
 }
@@ -181,7 +180,7 @@ a.button:hover{
 }
 
 #hello{
-    width: 1200px;
+    width: 900px;
 }
 
 .here{
