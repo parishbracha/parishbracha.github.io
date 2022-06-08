@@ -10,6 +10,19 @@
     src: url(fonts/HelveticaNeue-Bold.woff2);
 }
 
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(fonts/HelveticaNeue-Medium.woff);
+    src: url(fonts/HelveticaNeue-Medium.woff2);
+}
+
+.subhead{
+    font-family: 'Helvetica Neue Medium';
+}
+
+.bold{
+    font-family: 'Helvetica Neue Medium';
+}
 
 .header-img{
     width: 50%;
@@ -22,7 +35,7 @@ h1{
     line-height: 3.5rem;
 }
 body {
-    font-family: Helvetica Neue Light;
+    font-family: 'Helvetica Neue Light';
     font-weight: 100;
     background-color: #FCFCFC;
     color: #111111;
@@ -41,7 +54,7 @@ body {
 }
 
 .dropbtn {
-    font-family: Helvetica Neue Light;
+    font-family: 'Helvetica Neue Light';
     background-color: transparent;
     color: #111111;
     display: inline-block;
@@ -184,13 +197,13 @@ a.button:hover{
 }
 
 .here{
-    font-family: Helvetica Neue Bold;
+    font-family: 'Helvetica Neue Bold';
     color: #111111;
     text-decoration: underline;
 }
 
 #email{
-    font-family: Helvetica Neue Bold;
+    font-family: 'Helvetica Neue Bold';
 }
 
 #discipline{

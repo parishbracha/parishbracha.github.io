@@ -18,6 +18,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        body {
+            font-size: 1.5rem;
+        }
+
         main {
             padding-top: 20px;
             padding-left: 10%;
@@ -33,6 +37,42 @@
             height: 12px;
             border-bottom: solid 1px #111111;
         }
+
+        .category {
+            font-size: 2.5rem;
+        }
+
+        li {
+            list-style:square;
+            color: #111111;
+        }
+
+        .competencies{
+            display: flex;
+        }
+
+        .expDetails{
+            padding-left: 2%;
+        }
+
+        .skills{
+            padding-left: 5%;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .expDetails{
+            padding-left: 5%;
+        }
+
+            .competencies{
+            display: block;
+        }
+            body{
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -41,34 +81,158 @@
         <div class="welcome">
             <h1>Parish Bracha</h1>
             <div>
-                <p>Neurobiology || Philosophy || Music</p>
+                <p id="discipline">Neurobiology || Philosophy || Music</p>
             </div>
         </div>
         <div style="padding-top: 100px" class="experience">
             <div>
-                <p><Education</p>
+                <p class="category">Education</p>
                 <div class="line"></div>
 
-                <div style="padding-top: 10px;">
-                    <p>University of California, Davis</p>
-                    <p>September 2019 - June 2022</p>
-                    <ul>
+                <div class="expDiv" style="padding-top: 10px;">
+                    <div class="subhead">
+                        <p>University of California, Davis</p>
+                        <p>September 2019 - June 2022</p>
+                    </div>
+                    <ul class="expDetails">
                         <li>B.Sc. Neurobiology, Physiology, & Behavior with a focus in Neurobiology</li>
                         <li>B.A. in Philosophy</li>
-                        <li style="padding-top: 25px;">Participant in: Advancing Diversity in Aging Research Honors (ADAR-HR) and Biology Undergraduate Scholars (BUSP) Programs
-                            <ul style="padding-left: 50px;">
+                        <li>Participant in: Advancing Diversity in Aging Research Honors (ADAR-HR) and Biology
+                            Undergraduate Scholars (BUSP) Programs
+                            <ul style="padding-left: 5%;">
                                 <li>Work in on-campus lab studying neurobiology of aging</li>
-                                <li>Enroll in courses on professional development and reading and interpreting scientific literature and present research</li>
+                                <li>Enroll in courses on professional development and reading and interpreting
+                                    scientific literature and present research</li>
                             </ul>
                         </li>
                     </ul>
-                    <p>MiraCosta College</p>
-                    <p>April 2016 - June 2019</p>
-                    <ul>
-                            
+                    <br>
+                    <div class="subhead">
+                        <p>MiraCosta College</p>
+                        <p>April 2016 - June 2019</p>
+                    </div>
+                    <ul class="expDetails">
                         <li>A.A. in Liberal Arts with Emphasis in Mathematics and Sciences (2018)</li>
-                        <li>Honors: President's List, National Society of Leadership and Success, Phi Theta Kappa, Honors Scholar Program</li>
+                        <li>Honors: President's List, National Society of Leadership and Success, Phi Theta Kappa,
+                            Honors Scholar Program</li>
                     </ul>
+                </div>
+                <div style="padding-top: 100px;">
+                    <p class="category">Research Experience</p>
+                    <div class="line"></div>
+                    <div style="padding-top: 10px;">
+                        <div class="expDiv">
+                            <div class="subhead">
+                                <p>The Buck Institute of Research and Aging</p>
+                                <P>Undergraduate Researcher</P>
+                                <p>June 2021 - August 2021</p>
+                            </div>
+                            <ul class="expDetails">
+                                <li>Characterization of Huntington’s Disease in 3-D striatal organoids</li>
+                                <ul style="padding-left: 5%;">
+
+                                    <li>Aided in the development of a relevant model of the striatal organoid.</li>
+                                    <li>Immunohistochemical analysis of iPSC-derived striatal organoids to
+                                        characterize the role of transcription factors in striatal development.</li>
+                                </ul>
+                                <li>Maintenance and differentiation of iPSCs & iPSC-derived neural stem cells,
+                                    medium spiny neurons, astrocytes, pericytes & endothelial cells.</li>
+                                <li>Processing RNA-seq datasets and analysis of high-content imaging data.</li>
+                                <li>Imaging and quantitative analysis with the Biotek Cytation 5 high-content
+                                    digital microscope.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="expDiv">
+                            <div class="subhead">
+                                <p>University of California, Davis</p>
+                                <P>Undergraduate Researcher</P>
+                                <p>June 2019 - June 2022</p>
+                            </div>
+                            <ul class="expDetails">
+                                <li>Assist in research, data analysis, and statistical analysis in the Recanzone
+                                    Labresearching age-related hearing loss in Rhesus macaques. Analyze neuronaltrace
+                                    data to generate trace data, perform statistical analysis of neuronal
+                                    data,participate in lab meetings, and work with colleagues to collate research.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="expDiv">
+                            <div class="subhead">
+                                <p>University of California, Davis</p>
+                                <P>Research Intern</P>
+                                <p>November 2019 - June 2020</p>
+                            </div>
+                            <ul class="expDetails">
+                                <li>Assisted in bioacoustic research of the Cassin's Finch. Duties included working with
+                                    Python and R to develop an algorithmic approach to parsing data in the form of audio
+                                    recordings via classification and segmentation, performing independent research on
+                                    programming libraries, and meeting with colleagues.</li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p style="padding-top: 100px"class="category">Core Competencies</p>
+                    <div class="line"></div>
+                    <div class="competencies" style="justify-content:space-around;">
+                        <div style="padding-left: 2%; margin: 2%;">
+                            <p><span class="bold">Scientific Skills</span></p>
+                            <ul class="skills">
+                                <li>Growing, maintaining, staining, & processing organoids</li>
+                                <li>Cell culturing</li>
+                                <li>IHC & ICC</li>
+                                <li>iPSC maintenance & differentiation</li>
+                                <li>High-content digital microscopy, quantitative analysis, image processing</li>
+                                <li>RNAseq analysis</li>
+                                <li>Programming Python & R</li>
+                                <li>Data analysis with Python, R, MatLab</li>
+                                <li>Biostatistical Analysis with Python, R, Excel, Prism</li>
+                            </ul>
+                        </div>
+                        <div style="padding-left: 2%; margin: 2%;">
+                            <p><span class="bold">Leadership & Communication Skills</span></p>
+                            <ul class="skills">
+                                <li>Presented research at 4 national research conferences</li>
+                                <li>Regular presentations in lab meetings and scientific journal clubs</li>
+                                <li>Developed own internship using machine learning for data processing</li>
+                                <li>Independently worked as English teacher in China teaching 35 students advanced and beginner English while developing own curriculum</li>
+                                <li>Led multilingual team of 10 in authoring book in Mandarin and English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p style="padding-top: 100px"class="category">References</p>
+                    <div class="line"></div>
+                    <div style="padding-top: 10px;">
+                        <div class="ref">
+                            <p><span class="bold">Dr. Connie Champagne </span></p>
+                            <p>Director of Educational Enrichment and Outreach Programs</p>
+                            <p>University of California, Davis</p>
+                            <p>cechampagne@ucdavis.edu</p>
+                            <p>1 Shields Ave, Davis, CA 95616</p>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="ref">
+                            <p><span class="bold">Dr. Gregg Recanzone</span></p>
+                            <p>Professor and Associate Dean</p>
+                            <p>University of California, Davis</p>
+                            <p>ghrecanzone@ucdavis.edu</p>
+                            <p>1 Shields Ave, Davis, CA 95616</p>
+                            <br>
+                        </div>
+                        <div class="ref">
+                            <p><span class="bold">Zach Rabow</span></p>
+                            <p>Graduate Student in Integrative Pathobiology</p>
+                            <p>University of California, Davis</p>
+                            <p>ztrabow@ucdavis.edu</p>
+                            <p>1 Shields Ave, Davis, CA 95616</p>
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
