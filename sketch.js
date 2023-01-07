@@ -10,7 +10,7 @@ var border = .300;
 
 
 function setup() {
-  var canvas = createCanvas(windowWidth*.90, windowHeight*.6);
+  var canvas = createCanvas(windowWidth*.80, windowHeight*.6);
   canvas.parent('sketch')
 	/*
   canvas.style("overflow", "hidden");
