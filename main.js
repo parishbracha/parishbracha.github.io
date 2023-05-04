@@ -1,11 +1,11 @@
-$(function () {
-    $('a img').hover( function () {
-        $('a img').attr('src', 'images/eyeflowerfull-hover.png');
-    },
-    function(){
-      $('a img').attr('src', 'images/eyeflowerfull.png')
-    });
-  });
+ /* Email Dropdown */
+ const emailIcon = document.getElementById('email-icon');
+ const emailBox = document.getElementById('email-box');
+ 
+ emailIcon.addEventListener('click', () => {
+   emailBox.style.display = emailBox.style.display === 'none' ? 'block' : 'none';
+   console.log('working');
+ });
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */

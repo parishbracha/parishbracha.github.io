@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parish Bracha</title>
+    <title>Parish</title>
     <link href="../styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
@@ -13,7 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <nav>
+            <div class="logo">
+              <img src="../svg/logotype-black.svg" alt="Logo">
+            </div>
+            <span class="wrapper">
+            <ul class="nav-links">
+                <li><a href="https://www.instagram.com/par.ish_/" aria-label="Instagram"><img src="../svg/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://soundcloud.com/p-a-r-i-s-h" aria-label="Soundcloud"><img src="../svg/soundcloud.svg" alt="Soundcloud"></a></li>
+                <li><a href="https://p-a-r-i-s-h.bandcamp.com/" aria-label="Bandcamp"><img src="../svg/bandcamp.svg" alt="Bandcamp"></a></li>
+                <li><a href="index.html" aria-label="Living Index"><img src="../svg/vial-solid.svg" alt="Living Index"></a></li>
+                <li><a id="email-icon" aria-label="Email"><img src="../svg/envelope-solid.svg" alt="Email"></a></li>
+              </ul>
+            <div id="email-box" style="display:none;">
+              <p>parish@parish.bio</p>
+            </div>
+            </span>
+          </nav>  
     <style>
         main {
             padding-top: 20px;
@@ -23,7 +39,7 @@
         }
 
         .welcome {
-            padding-top: 50px;
+            padding-top: 0px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -60,19 +76,14 @@
     <header>
     </header>
     <main>
-        <div style=><a class="dropbtn" style="" href="../index.html">back</a></div>
+        <div style=><a class="dropbtn" href="../index.html">back</a></div>
         <div class="welcome">
-            <h1>Parish Bracha</h1>
-            <div>
-                <p>Neurobiology || Philosophy || Music</p>
                 <p id="living-index" style="padding: 50px 0px; font-size: 2.5rem; font-family: 'Caudex', serif;">A living index of my
-                    research
-                    and creative work</p>
-            </div>
+                    academic research and creative work</p>
         </div>
         <div class="everything">
             <div class="dropdown">
-                <div class="filter-button"><button onclick="myFunction()" class="dropbtn button">filter</button></div>
+                <!-- <div class="filter-button"><button onclick="myFunction()" class="dropbtn button">filter</button></div> -->
                 <div id="myDropdown" class="dropdown-content button">
                     <a class="btn active" onclick="filterSelection('all')" href="#">all</a>
                     <a class="btn" onclick="filterSelection('science')" href="#">science</a>
@@ -81,39 +92,13 @@
                     <a class="btn" onclick="filterSelection('technology')" href="#">technology</a>
                 </div>
             </div>
-            <div class="filterDiv music technology">
-                <div class="index-list accordion_head">
-                    <a>
-                        <p>Gesticulator</p>
-                        <p>Max/MSP Device</p>
-                        <p>2023 (TBA)</p>
-                        <span class="plusminus">+</span>
-                    </a>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>Gesticulator is a Max4Live device developed to interface with a smartphone to allow for the use of natural and un-conscious body movements to manipulate 
-                        audio, video, and data signals in real time and through complex customizable parameters. Gesticulator can utilize up to 28 parameters from 15 discrete 
-                        signals to control any program capable of receiving OSC messages, including Max/MSP and common DAWs like Ableton Live. This device allows its user to 
-                        utilize their organic motion, gestures, and movement as an interface with digital signal processing and develop a reciprocal and symbiotic relationship 
-                        between organic body and digital signal that models the relationship between musician and instrument that is seen in many acoustic instruments such as the 
-                        violin. This device was built with a corresponding performance for violin and smartphone, called Blindsight, in mind to model this relationship. 
-                        Strapped to the bow arm while playing the violin, the smartphone transmits the speed, position, acceleration, and direction as the performer plays and 
-                        moves around the performance space and uses these movements to manipulate and process the signals coming from the violin in real time.
-                        <br>
-                        <br>
-                            Gesticulator will be presented at International Symposium for Electronic Arts 2023 in Paris as a talk and short paper.
-                       </p>
-                    <div class="button-zone">
-                        <a href="../files/Gesticulator A Reactive Tool for Symbiotic Performance and Organic Signal Processing.pdf" target="_blank" class="button">Full Paper</a>
-                </div>
-            </div>
             <div class="accordion_container">
                 <div class="filterDiv music">
                     <div class="index-list accordion_head">
                         <a>
                             <p>Cascades of Refinement</p>
                             <p>Album</p>
-                            <p>2023 (TBA)</p>
+                            <p>2023</p>
                             <span class="plusminus">+</span>
                         </a>
                     </div>
@@ -137,10 +122,33 @@
                         </div>
                     </div>
                 </div>
+            <div class="filterDiv music technology">
+                <div class="index-list accordion_head">
+                    <a>
+                        <p>Gesticulator</p>
+                        <p>Max/MSP Device</p>
+                        <p>2022</p>
+                        <span class="plusminus">+</span>
+                    </a>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                    <p>Gesticulator is a Max4Live device developed to interface with a smartphone to allow for the use of natural and un-conscious body movements to manipulate 
+                        audio, video, and data signals in real time and through complex customizable parameters. Gesticulator can utilize up to 28 parameters from 15 discrete 
+                        signals to control any program capable of receiving OSC messages, including Max/MSP and common DAWs like Ableton Live. This device allows its user to 
+                        utilize their organic motion, gestures, and movement as an interface with digital signal processing and develop a reciprocal and symbiotic relationship 
+                        between organic body and digital signal that models the relationship between musician and instrument that is seen in many acoustic instruments such as the 
+                        violin. This device was built with a corresponding performance for violin and smartphone, called Blindsight, in mind to model this relationship. 
+                        Strapped to the bow arm while playing the violin, the smartphone transmits the speed, position, acceleration, and direction as the performer plays and 
+                        moves around the performance space and uses these movements to manipulate and process the signals coming from the violin in real time.
+                       </p>
+                    <div class="button-zone">
+                        <a href="../files/Gesticulator A Reactive Tool for Symbiotic Performance and Organic Signal Processing.pdf" target="_blank" class="button">Full Paper</a>
+                </div>
+            </div>
                 <div class="filterDiv science">
                     <div class="index-list accordion_head">
                         <a>
-                            <p>Learning Effect is Demonstrated in Vision-Altering Prism Goggles </p>
+                            <p>Learning Effect is Demonstrated in Visuomotor Tasks with Spatial Neglect </p>
                             <p>Research</p>
                             <p>2022</p>
                             <span class="plusminus">+</span>
@@ -261,9 +269,8 @@
                         <p>Techniques used: Data and statistical analysis in Excel and MATLAB - processing and analysis
                             of
                             neuronal trace data to generate peristimulus time histograms and vector strength data</p>
-                        <p>Presented at the Annual Biomedical Research Conference for Minority Students (2021)
-                            and UC
-                            Davis Undergraduate Research Conference (2021).</p>
+                        <p>Presented at: <em>Annual Biomedical Research Conference for Minority Students</em> (2021)
+                            and <em>UC Davis Undergraduate Research Conference</em> (2021).</p>
                         <div class="button-zone">
                             <a href="../files/Neural Selectivity in the Temporal Domain of the Auditory Cortex in Aged Rhesus Macaques.pdf" target="_blank" class="button">Poster</a>
                         </div>
@@ -320,8 +327,7 @@
                     <div class="accordion_body" style="display: none;">
                         <p> A performance for the annual experimental music festival NorCal Noisefest in 2020, streamed
                             live
-                            over YouTube and Twitch.tv. Music created with Ableton Live and Max/MSP. Live audio-reactive
-                            visuals and signal processing done in Max/MSP & Jitter.</p>
+                            over YouTube and Twitch.tv. Live audio-reactive visuals and signal processing done in Max/MSP & Jitter.</p>
                         <div class="button-zone">
                             <a href="https://www.youtube.com/watch?v=22JeF7SAAcw" target="_blank" class="button">Video</a>
                         </div>

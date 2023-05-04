@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parish Bracha</title>
+    <title>Parish</title>
     <link href="styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
+    <link rel="icon" type="image/x-icon" href="svg/logotype-white.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-
-
+        <nav>
+            <div class="logo">
+              <img src="/svg/logotype-black.svg" alt="Logo">
+            </div>
+            <span class="wrapper">
+            <ul class="nav-links">
+                <li><a href="https://www.instagram.com/par.ish_/" aria-label="Instagram"><img src="/svg/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://soundcloud.com/p-a-r-i-s-h" aria-label="Soundcloud"><img src="/svg/soundcloud.svg" alt="Soundcloud"></a></li>
+                <li><a href="https://p-a-r-i-s-h.bandcamp.com/" aria-label="Bandcamp"><img src="/svg/bandcamp.svg" alt="Bandcamp"></a></li>
+                <li><a href="living-index/index.html" aria-label="Living Index"><img src="/svg/vial-solid.svg" alt="Living Index"></a></li>
+                <li><a id="email-icon" aria-label="Email"><img src="/svg/envelope-solid.svg" alt="Email"></a></li>
+              </ul>
+            <div id="email-box" style="display:none;">
+              <p>parish@parish.bio</p>
+            </div>
+            </span>
+          </nav>          
     <style>
-
-        body{
-            padding-top: 100px;
-        }
         main {
+            padding-top: 20px;
+            padding-left: 10%;
             width: 90%;
             margin: auto;
         }
 
-        h1{
-            margin: 0;
-            padding: 20px 0;
-            font-size: 6rem;
-
+        .welcome {
+            padding-top: 50px;
         }
 
         @media only screen and (max-width: 600px) {
-            body{
-            padding-top: 0;
-        }
-            main{
-                padding: 5px;
+            main {
+                padding-left: 0;
+                margin: 2.5%;
+            }
+
+            body {
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            .accordion_body p {
+                font-size: 1rem;
+            }
+
+            #living-index p{
+                font-size: 2rem;
+            }
+
+            .welcome{
+                padding-top: 20px;
             }
 
             h1{
-                font-size: 3rem;
-                padding: 0;
-            }
-            .welcome h1{
                 margin: 0;
             }
         }
@@ -56,22 +75,17 @@
 
 <body>
     <main>
-        <section id="intro">
-            <h1>Parish Bracha</h1>
-            <div>
-                <p id="discipline">Neurobiology || Philosophy || Music</p>
-            </div>
-        </section>
         <section>
-            <div width="95%" height="75%" id="sketch"></div>
+          <h2 style="margin-bottom: 0px;">Cascades of Refinement</h2>
+          <h3>May 12, 2023 on Important Records</h3>
+          <div>
+            <div style="display:flex;">
+              <img src="images/cor.jpg" alt="Cascades of Refinement" style="width: 30%; height: 25%; margin-right: 20px;">
+              <p id="cor" style="flex: 1;">Cascades of Refinement is Parish's debut album released under his own name.<br></br>The techniques that defined his influential early sound have been refined into a flawless hybrid of analog and digital textures which give his post-minimalist compositions an unmistakably personal expressivity. Classical instruments are mutilated and transmuted into razor-sharp shards of glass suspended on piano wire above warped opalescent metal while never losing sight of their tonal integrity. Much like the impartial juxtaposition Parish employs in his timbral exploration, each composition explores the concepts of beauty and gentleness through and with extremity, violence, and chaos as equal counterparts, with each successive piece refining and relieving the artificial tension between these states.<br></br>Employing use of the Una Corda, prepared piano, bowed piano, plucked piano, harpsichord, church organ, untuned violin, voice, synthesizers, and resampled field recordings, Cascades of Refinement lies somewhere in the indefinite space between acoustic and electronic and is beholden to neither.<br></br>Parish's initial electroacoustic experiments with piano and strings were interrupted by the pandemic lockdown when he was limited to sampled instrumentation and digital processing available on a computer. Out of this necessity evolved an appreciation for the incidental nature of digitally sampled acoustic instrumentation and the unpredictability of its interaction with digital signal processing. As work on Cascades of Refinement continued and acoustic recording was reintroduced, the focus turned to the tension between recorded and sampled instrumentation, with the goal of integrating the two into a singular indistinguishable material to be warped and shaped together.<br></br>Each of the four pieces of the Cascade series explore this tension, successively integrating and collapsing their distinction with each piece. The subtle artifacts of digital processing and incidental mechanical sounds of the acoustic are amplified and given presence alongside the tonal elements of each piece until a point of indivisibility is reached. The sound of a bow scraping along a string or a granular buffer freezing are neither discarded nor hidden, but selected as the ripest material to accompany and structure each composition.<br></br>Cascades of Refinement is a dialogue between organic and digital, between the mercurial and infinitely reproducible, not as opposites, but as mereologically cohabiting counterparts with equal expressivity.</p>
+            </div>
+          </div>
         </section>
-        <section id="links">
-            <p id="hello">You can find a living index of my research and creative work <a
-                    class="here" href="living-index/index.html">here</a>. <br> You can learn more about my professional work
-                by viewing my CV <a class="here" href="cv/index.html">here</a>.</p>
-            <p id="email">parishbracha@gmail.com</p>
-        </section>
-    </main>
-</body>
-
+      </main>
+  </body>
+  <script src="main.js"></script>
 </html>
