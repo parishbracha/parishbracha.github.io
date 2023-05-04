@@ -103,7 +103,8 @@ a.button:hover{
     width: 15%;
     max-width: 250px;
     min-width: 150px;
-    margin-left: 8%;
+    margin-left: 180px;
+    margin-top: 20px;
   }
   
 .logo img {
@@ -352,7 +353,7 @@ a.button:hover{
 
     .logo {
         width: 40%;
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: 10px;
       }
 
