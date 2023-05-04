@@ -98,17 +98,18 @@ nav {
     margin: auto;
 }
 
-h1{
+h1 {
     font-family: 'Caudex', serif;
     font-size: 1.5rem;
 }
-h2{
+
+h2 {
     font-family: 'Caudex', serif;
     font-size: 2.5rem;
     margin-bottom: 0px;
 }
 
-h3{
+h3 {
     font-family: 'Caudex', serif;;
     font-size: 1.5rem;
 }
@@ -122,12 +123,13 @@ body {
     width: 90%;
     margin: auto;
 }
+
 .welcome h1 {
     font-size: 2.5em;
     margin: 20px 0;
 }
 
-.filter-button{
+.filter-button {
     display: flex;
     justify-content: end;
 }
@@ -203,9 +205,6 @@ body {
     border-top: .75px solid rgba(0, 0, 0, .25);
     margin-top: 2em;
     line-height: inherit;
-}
-
-.index-list p{
 }
 
 a {
@@ -367,6 +366,14 @@ li {
         padding: 5px;
         font-size: 1rem;
     }
+    
+    h2 {
+        font-size: 1.2rem;
+      }
+      
+    h3 {
+        font-size: 0.8rem;
+      }  
 
     .expDetails {
         padding-left: 10%;
@@ -391,14 +398,6 @@ li {
       .nav-links li {
         margin: 5px 0;
       }
-
-    h2 {
-        font-size: 1.2rem;
-      }
-      
-    h3 {
-        font-size: 0.8rem;
-      }  
 
     #hello{
         width: 100%;
