@@ -20,7 +20,6 @@ main {
     padding-top: 20px;
     padding-left: 10%;
     width: 90%;
-    margin: auto;
 }
 
 h1 {
@@ -58,7 +57,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     width: 100%;
   }
 
@@ -81,6 +79,24 @@ ul {
     margin: 0%;
     padding: 0%;
 }
+
+a.button{
+    display: inline-block;
+    border: 1px solid #111111 !important;
+    font-size: 1em;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 3px;
+    color: #111111;
+}
+
+a.button:hover{
+    border: .75px solid #111111 !important;
+    font-size: 1em;
+}
+
 
 
 .logo {
@@ -237,21 +253,11 @@ ul {
     padding-bottom: 50px;
 }
 
+
 .show {
     display: block;
 }
 
-a.button{
-    display: inline-block;
-    border: 1px solid #111111 !important;
-    font-size: 1em;
-    letter-spacing: 0.1px;
-    border-radius: 8px;
-    padding: 5px 7px;
-    transition: all ease 0.15s;
-    margin-bottom: 3px;
-    color: #111111;
-}
 
 #email{
     font-family: 'Helvetica Neue Bold';
@@ -279,20 +285,43 @@ a.button{
     color: #ecebea;
   }
 
-#cor{
-font-family: 'Helvetica Neue Light';
-font-size: 1.3rem;
-text-align: justify;
-text-justify: auto;
-display:flex;
-}
-
-#cor img {
-    width: 30%;
-    height: 30%;
+#cor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  
+#left img {
+    width: 100%;
+    max-width: 400px;
     margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+#left iframe {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  
+#cor p {
+    flex: 1;
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.3rem;
+    text-align: justify;
+    text-justify: auto;
   }
 
+#left {
+    width: 30%;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
 @media only screen and (max-width: 600px) {
     main {
         padding-left: 2.5%;
@@ -306,6 +335,11 @@ display:flex;
         letter-spacing: .05rem;
         padding: 5px;
         font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10%;
     }
 
     h2 {
@@ -335,11 +369,31 @@ display:flex;
         display: block;
     }
 
-    #cor img {
-        width: 64%;
+    #cor p {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    #left img {
+        width: 100%;
         height: auto;
+        max-width: 320px;
         margin-right: 20px; 
         margin-bottom: 20px;
+    }
+      
+    #left iframe {
+        width: 100%;
+        max-width: 320px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: 20%;
+      }
+
+    #left {
+        display: flex;
+        flex-direction: row;
+        width: 100%
     }
 
     #email-box {
@@ -351,4 +405,8 @@ display:flex;
         border-radius: 10px;
         display: none;
       }
+
+    #cor p {
+        font-size: 1.2rem;
+    }
 }
