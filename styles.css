@@ -361,12 +361,13 @@ li {
 
     body {
         width: 100%;
+        max-width: 100%;
         margin: auto;
         letter-spacing: .05rem;
         padding: 5px;
         font-size: 1rem;
     }
-    
+
     h2 {
         font-size: 1.2rem;
       }
