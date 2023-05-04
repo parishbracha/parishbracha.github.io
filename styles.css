@@ -303,7 +303,14 @@ font-family: 'Helvetica Neue Light';
 font-size: 1.3rem;
 text-align: justify;
 text-justify: auto;
+display:flex;
 }
+
+#cor img {
+    width: 30%;
+    height: 30%;
+    margin-right: 20px;
+  }
 
 main {
     padding-top: 20px;
@@ -369,17 +376,29 @@ li {
         display: block;
     }
 
+    .logo {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+
+      .nav-links svg {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      .nav-links li {
+        margin: 5px 0;
+      }
+
     h2 {
         font-size: 1.2rem;
       }
       
-      h3 {
+    h3 {
         font-size: 0.8rem;
-      }
-      
-    body {
-        font-size: 1.1rem;
-    }
+      }  
 
     #hello{
         width: 100%;
@@ -387,6 +406,17 @@ li {
 
     #skills-list{
         padding-left: 10%;
+    }
+
+    #cor {
+        display: block;
+    }
+
+    #cor img {
+        width: 64%;
+        height: auto;
+        margin-right: 20px; 
+        margin-bottom: 20px;
     }
 
     .welcome h1{
