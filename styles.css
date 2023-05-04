@@ -237,6 +237,22 @@ ul {
     padding-bottom: 50px;
 }
 
+.show {
+    display: block;
+}
+
+a.button{
+    display: inline-block;
+    border: 1px solid #111111 !important;
+    font-size: 1em;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 3px;
+    color: #111111;
+}
+
 #email{
     font-family: 'Helvetica Neue Bold';
 }
@@ -301,15 +317,14 @@ display:flex;
       }  
 
     .logo {
-        width: 50%;
+        width: 40%;
         margin-left: 0px;
         margin-top: 10px;
       }
 
-    .nav-links svg {
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
+    .nav-links img {
+        height: 30px;
+        width: 30px;
       }
 
     .nav-links li {
