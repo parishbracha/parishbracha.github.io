@@ -318,8 +318,9 @@ main {
     margin: auto;
 }
 
-.welcome {
-    padding-top: 50px;
+.index-head {
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .line {
