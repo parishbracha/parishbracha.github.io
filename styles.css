@@ -162,7 +162,7 @@ a.button:hover{
     border-radius: 8px;
     padding: 5px 7px;
     transition: all ease 0.15s;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -337,6 +337,7 @@ a.button:hover{
         letter-spacing: .05rem;
         padding: 5px;
         font-size: 1rem;
+        margin-bottom: 50px;
     }
 
     a {
