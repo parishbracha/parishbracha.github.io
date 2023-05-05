@@ -99,9 +99,10 @@ a.button:hover{
 
 
 .logo {
-    width: 15%;
+    width: 200px;
     max-width: 250px;
-    margin-left: 180px;
+    min-width: 130px;
+    margin-left: 90px;
     margin-top: 20px;
   }
   
@@ -337,7 +338,6 @@ a.button:hover{
         letter-spacing: .05rem;
         padding: 5px;
         font-size: 1rem;
-        margin-bottom: 50px;
     }
 
     a {
