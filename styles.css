@@ -99,9 +99,9 @@ a.button:hover{
 
 
 .logo {
-    width: 200px;
-    max-width: 250px;
-    min-width: 130px;
+    width: 15%;
+    max-width: 300px;
+    min-width: 200px;
     margin-left: 11%;
     margin-top: 20px;
   }
@@ -359,6 +359,7 @@ a.button:hover{
 
     .logo {
         width: 35%;
+        min-width: 0px;
         margin-left: 20px;
         margin-top: 10px;
         margin-right: 20px;
