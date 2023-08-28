@@ -7,6 +7,15 @@
    console.log('working');
  });
 
+ function openLightbox(imageUrl) {
+  document.getElementById('lightbox-image').src = imageUrl;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
