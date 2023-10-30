@@ -65,8 +65,12 @@ a {
     padding: 0%;
 }
 
-a:visited{
-    color: #111111;
+a:link {
+  color: #111111
+}
+
+a:visited {
+  color: #111111
 }
 
 p {
@@ -96,8 +100,6 @@ a.button:hover{
     font-size: 1em;
 }
 
-
-
 .logo {
     width: 15%;
     max-width: 300px;
@@ -108,7 +110,6 @@ a.button:hover{
   
 .logo img {
     width: 100%;
-    pointer-events: none; 
   }
   
 .nav-links {
@@ -303,7 +304,7 @@ a.button:hover{
     position: relative;
     cursor: pointer;
   }
-  
+
 #email-box {
     position: absolute;
     margin-left: 220px;
