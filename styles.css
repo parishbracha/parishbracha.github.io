@@ -73,7 +73,7 @@ h3 {
 body {
     font-family: 'Helvetica Neue Light';
     font-weight: 100;
-    background-color: #ecebea;
+    background-color: #ecebea00;
     font-size: 1.5rem;
     width: 90%;
     margin: auto;
@@ -181,30 +181,57 @@ a.button:hover{
   }
   
 .nav-links {
-    display: flex;
-    width: 60%;
-  }
-
+  display: flex;
+  width: 60%;
+}
+  
 .nav-links li {
-    margin-right: 20px;
-    list-style: none;
-  }
+  margin-right: 20px;
+  list-style: none;
+}
   
 .nav-links li:last-child {
-    margin-right: 0;
-  }
+  margin-right: 0;
+}
+  
+.nav-links .icon-container {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
   
 .nav-links a {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-  }
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
   
 .nav-links img {
-    width: 35px;
-  }
+  width: 45px;
+  transition: all 0.2s ease-in;
+  position: absolute;
+}
+  
+.icon-hover {
+  opacity: 0;
+}
+  
+.icon-container:hover .icon {
+  opacity: 0;
+}
+  
+.icon-container:hover .icon-hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.icon-container .icon-hover {
+  opacity: 0;
+}  
 
 .wrapper {
     display: inline-block;
@@ -365,8 +392,8 @@ a.button:hover{
 
   #email-box {
     position: absolute;
-    margin-left: 220px;
-    top: 100px;
+    margin-left: 160px;
+    top: 80px;
     background-color: #000;
     padding: 10px;
     border-radius: 10px;
@@ -382,7 +409,7 @@ a.button:hover{
     color: #ecebea;
   }
 
-#cor {
+  #cor {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
