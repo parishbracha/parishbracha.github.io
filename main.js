@@ -2,20 +2,23 @@
  const emailIcon = document.getElementById('email-icon');
  const emailBox = document.getElementById('email-box');
  
+ let isEmailBoxVisible = false;
+ 
  emailIcon.addEventListener('click', () => {
-   emailBox.style.display = emailBox.style.display === 'none' ? 'block' : 'none';
-   console.log('working');
+   if (!isEmailBoxVisible) {
+     emailBox.style.display = 'block';
+     setTimeout(() => {
+       emailBox.style.opacity = '1';
+     }, 0);
+   } else {
+     emailBox.style.opacity = '0';
+     setTimeout(() => {
+       emailBox.style.display = 'none';
+     }, 300); // Adjust the timing to match the transition duration (0.3s in this case)
+   }
+   isEmailBoxVisible = !isEmailBoxVisible;
  });
-
- function openLightbox(imageUrl) {
-  document.getElementById('lightbox-image').src = imageUrl;
-  document.getElementById('lightbox').style.display = 'flex';
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-}
-
+ 
 //CURSOR
 
 //END CURSOR
