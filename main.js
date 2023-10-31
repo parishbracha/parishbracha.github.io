@@ -16,6 +16,11 @@ function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
 }
 
+//CURSOR
+
+//END CURSOR
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
