@@ -1,4 +1,4 @@
- /* Email Dropdown */
+//EMAIL DROPDOWN
  const emailIcon = document.getElementById('email-icon');
  const emailBox = document.getElementById('email-box');
  
@@ -18,7 +18,19 @@
    }
    isEmailBoxVisible = !isEmailBoxVisible;
  });
- 
+//END EMAIL DROPDOWN
+
+// LIGHTBOX
+ function openLightbox(imageUrl) {
+  document.getElementById('lightbox-image').src = imageUrl;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+//END LIGHTBOX
+
 //CURSOR
 
 //END CURSOR
