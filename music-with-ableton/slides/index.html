@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+	<div class="bg-container">
+		<div class="bg-noise"></div>
+		<div class="bg-gradient"></div>
+	  </div>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://ableton-production.imgix.net/live/screenshot-arrangement-view.jpg?auto=compress%2Cformat&w=1024" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .element: style="font-size: 66px" -->
+
+
+<div class="has-dark-background" style="background-color: #373737; padding: 250px 0  250px 200px; box-sizing: border-box; position: absolute; right: -14.5%; top: 20%; height: 70%; width: 80%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+
+# Making Music with Ableton Live<!-- .element: style="letter-spacing: 1.5rem" -->
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 43%; display: flex; flex-direction: column; align-items: center; justify-content: center">
+
+
+<img src="https://lh3.googleusercontent.com/pw/ADCreHfGoAWB7Dw0j6eBaG89M3-zCGpviHYxfXNpuIpjXke7U0p24Cu4n93u6zAhKtn6W9rP9lj_V9XS2cZhYBD7Dy100kmoHssNTrEyFFl1Z7oyZrJA2k2Uo6115yNuZXqdbre2yDCpOZUmSnr7J2usMPbM=w661-h661-s-no-gm" alt="" style="object-fit: scale-down">
+
+ <!-- .element: style="max-height: 100%; max-width: 100%; position: absolute; left: 0%; top: 0%; height: 30%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" -->
+<img src="https://f4.bcbits.com/img/0033415043_10.jpg" alt="" style="object-fit: scale-down">
+
+<!-- .element: style="position: absolute; left: 0%; top: 33%; height: 30%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" -->
+<img src="https://f4.bcbits.com/img/0032271042_10.jpg" alt="" style="object-fit: scale-down">
+
+<!-- .element: style="position: absolute; left: 0%; top: 67%; height: 30%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" -->
+
+
+</div>
+
+<div class="" style="transform: rotate(90deg); position: absolute; left: 60%; top: 43%; height: 15%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+# About Me
+</div>
+
+<div class="has-dark-background" style="background-color: rgba(55, 55, 55, 0.60); box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1); padding: 30px 85px; box-sizing: border-box; position: absolute; margin-top: 30px; left: 31%; top: 0%; height: 95%; width: 65%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+
+# Parish Bracha
+
+- Music Producer, Audiovisual Artist, Educator
+- Ex-Neurobiologist and Biomedical Researcher
+- Based in San Francisco
+- Using Ableton Live for Music Production and Sound Design since 2012
+- Released First Album 2013
+	- Rerelease featured in "The Best Electronic Music on Bandcamp, October 2023"
+- Most recent release May 2023 on Important Records
+- https://parish.bio/
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: rgba(55, 55, 55, 0.60); box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1); padding: 50px 20px; box-sizing: border-box; position: absolute; left: 10%; top: 10%; height: 80%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+# Introductions
+
+1. Name and pronouns?
+2. Where in the world are you currently located?
+3. How much experience do you have with Ableton?
+4. What do you hope to get out of this course?
+5. Favorite genre(s) or an artist/album/song you've been into lately?
+
+<!-- .element: style="font-size: 66px" -->
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .element: style="font-size: 66px" -->
+<div class="has-dark-background" style="background-color: rgba(55, 55, 55, 0.60); box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1); padding: 130px 85px; box-sizing: border-box; position: absolute; left: 30%; top: 10%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+
+### Class Structure
+*all times in PST*
+
+3:00 — Part 1 of lesson
+
+4:00 — Break
+
+4:15 — Part 2 of lesson
+
+5:15 — Studio Time
+
+5:50 — Wrap-Up
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .element: style="font-size: 50px" -->
+<div class="has-dark-background" style="background-color: rgba(55, 55, 55, 0.60); box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1); padding: 50px 20px; box-sizing: border-box; position: absolute; left: 10%; top: 5%; height: 90%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Resources
+
+- Our primary mode of chatting and sharing info will be on <u>**Discord**</u>
+	- Making Music with Ableton Live channel on [Index Discord channel](https://discord.gg/d9mJAy2AW9)
+
+- The course page with all links and content can be accessed at: https://parish.bio/music-with-ableton/
+	- Detailed notes and any relevant downloads will be uploaded before every class
+	- Classes will be recorded and made available as soon as possible
+
+- You can contact me outside of class for any reason at: parishbracha@gmail.com
+</div>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":1920,"height":1200,"margin":0,"controls":true,"progress":true,"slideNumber":false,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
