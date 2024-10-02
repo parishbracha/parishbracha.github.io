@@ -113,7 +113,7 @@ ul {
 a.button{
     display: inline-block;
     border: 1px solid #111111 !important;
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 0.1px;
     border-radius: 8px;
     padding: 5px 7px;
@@ -124,7 +124,7 @@ a.button{
 
 a.button:hover{
     border: .75px solid #111111 !important;
-    font-size: 1em;
+    font-size: 1.2em;
     background: black;
     color: #ecebea;
     opacity:75%;
@@ -151,6 +151,21 @@ a.button:hover{
   background-repeat: repeat;
   animation: bg-noise-animation .2s infinite;
   opacity: 0.75;
+  visibility: visible;
+}
+
+.bg-noise-less {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-noise-animation .2s infinite;
+  opacity: 0.3;
   visibility: visible;
 }
 
