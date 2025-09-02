@@ -1,0 +1,434 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#16161d">
+  <title>Parish Portfolio</title>
+  <link href="../styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="icon" type="image/x-icon" href="../svg/logotype.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="bg-container">
+    <div class="bg-gradient"></div>
+    <div class="bg-noise-less"></div>
+  </div>
+
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href="../index.html">
+        <img src="../svg/logotype.svg" alt="Parish">
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li>
+        <a href="https://www.instagram.com/par.ish_/" class="nav-link social-nav-link" aria-label="Instagram">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://open.spotify.com/artist/3r8e76iW59KNXJxy05lZ69?si=EdEzwiedTEmtbor9M_2w5Q"
+          class="nav-link social-nav-link" aria-label="Spotify">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.481.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://soundcloud.com/reliquaryveil" class="nav-link social-nav-link" aria-label="SoundCloud">
+          <svg class="nav-icon" viewBox="0 0 75 33.51" fill="currentColor">
+            <path
+              d="M75,23.6a10.5,10.5,0,0,1-10.63,9.91H38.82a2.14,2.14,0,0,1-2.12-2.13V3.87a2.34,2.34,0,0,1,1.41-2.24S40.46,0,45.41,0A16.74,16.74,0,0,1,54,2.36a17,17,0,0,1,8,11.08,9.8,9.8,0,0,1,2.71-.37A10.23,10.23,0,0,1,75,23.6Z" />
+            <path
+              d="M33.51,5.61a.83.83,0,1,0-1.65,0c-.7,9.25-1.24,17.92,0,27.14a.83.83,0,0,0,1.65,0C34.84,23.45,34.28,14.94,33.51,5.61Z" />
+            <path
+              d="M28.35,8.81a.87.87,0,0,0-1.73,0,103.7,103.7,0,0,0,0,23.95.87.87,0,0,0,1.72,0A93.2,93.2,0,0,0,28.35,8.81Z" />
+            <path
+              d="M23.16,8a.84.84,0,0,0-1.67,0c-.79,8.44-1.19,16.32,0,24.74a.83.83,0,0,0,1.66,0C24.38,24.21,24,16.55,23.16,8Z" />
+            <path
+              d="M18,10.41a.86.86,0,0,0-1.72,0,87.61,87.61,0,0,0,0,22.36.85.85,0,0,0,1.69,0A81.68,81.68,0,0,0,18,10.41Z" />
+            <path
+              d="M12.79,16a.85.85,0,0,0-1.7,0c-1.23,5.76-.65,11,.05,16.83a.81.81,0,0,0,1.6,0C13.51,26.92,14.1,21.8,12.79,16Z" />
+            <path
+              d="M7.62,15.12a.88.88,0,0,0-1.75,0C4.78,21,5.14,26.18,5.9,32.05c.08.89,1.59.88,1.69,0C8.43,26.09,8.82,21.06,7.62,15.12Z" />
+            <path
+              d="M2.4,18A.88.88,0,0,0,.65,18c-1,3.95-.69,7.22.07,11.18a.82.82,0,0,0,1.63,0C3.23,25.14,3.66,21.94,2.4,18Z" />
+          </svg>
+        </a>
+      </li>
+
+      <li class="email-container">
+        <a href="#" class="nav-link email-link" id="email-nav-link" aria-label="Email">
+          <svg class="nav-icon email-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
+            </path>
+          </svg>
+          <span class="email-text">parish@reliquaryveil.com</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-container portfolio-main">
+    <div class="portfolio-header">
+      <h1 class="portfolio-title">Selected Works</h1>
+    </div>
+
+    <div class="filter-container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="music">Music</button>
+        <button class="filter-tab" data-filter="dsp">DSP</button>
+        <button class="filter-tab" data-filter="installation">Installation</button>
+        <button class="filter-tab" data-filter="performance">Performance</button>
+        <button class="filter-tab" data-filter="other">Other</button>
+      </div>
+    </div>
+
+    <div class="portfolio-container">
+      <div class="portfolio-list">
+
+        <div class="portfolio-item" data-category="dsp" id="blindsight">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Blindsight</h3>
+              </div>
+              <div class="portfolio-date">In Progress</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                DSP
+              </div>
+              <div class="portfolio-media">
+                <img class="portfolio-img" src="../images/m2s-1.jpeg">
+                <img class="portfolio-img" src="../images/m2s-2.jpeg">
+                <img class="portfolio-img" src="../images/a0gest.png">
+                <video class="portfolio-img" controls>
+                  <source src="../images/m2s-vid.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px"><i>Blindsight</i> is a custom-built wearable I2C motion sensor device built for symbiotic live performance and organic signal processing. This device
+                  allows for real-time wireless control of Ableton Live and Max parameters by the magnetic vector,
+                  acceleration, angular rate, and gravity of the device's sensors. The first fully functional version was finished
+                  in 2024, and work is ongoing to develop additional features.</p>
+                <p style="margin-bottom: 10px">Using the schematics for CNMAT's <i>MARGO</i> device as a starting point, this
+                  device aims for a larger degree of freedom, reliability, and stability, increased Ableton Live integration, and more sensor parameters.</p>
+                <p>Built using an ESP32, LSM6DS3, and LIS3MDL, the device features 10 degrees of freedom, wireless OSC transmission over Wi-Fi and Bluetooth,
+                  5-7 hours of battery life, and an accompanying Max for Live device with real-time mapping and sensor visualization.</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../files/Blindsight.pdf" target="_blank" class="portfolio-link">
+                  Read the paper
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="performance">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Hyperviolet</h3>
+              </div>
+              <div class="portfolio-date">In Progress</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                Performance
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Live 3D motion capture performance</p>
+                <p style="margin-bottom: 10px;">Hyperviolet is a work in progress live motion-capture dance performance that is set to premiere at the Tower, San Francisco, in October 2025. Using the Perception Neuron 3 for real-time motion capture in Unreal Engine with live-performed reactive music, this performance explores the use of cutting-edge hybrid technology for performance and mutual interaction through virtual environments.</p>
+                <p>This work is part of the research I am conducting as a researcher in the World Engines Lab, where I use music and performance to explore the dynamics and emergent interactions observed within the virtual ecology, treating the environment as a dynamic stage for artistic inquiry and performance.</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://grayarea.org/create/research-labs/world-engines-lab/" target="_blank" class="portfolio-link">
+                  World Engines Lab
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="other">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Incoherent Subversion</h3>
+              </div>
+              <div class="portfolio-date">In Progress</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                Writing
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Essay to be submitted in the Almanac of Artificial Seasons</p>
+                <p style="margin-bottom: 10px">This paper examines the ongoing formation of a cultural era that is defined by a process of techno-economic
+                  consolidation and algorithmic fragmentation. This is contrasted with the purely fragmentary cultural response to the
+                  postmodern deconstruction that defined the latter-half of the 20th century and engendered distinct musical
+                  counter-cultures. Without the monoculture necessary for these traditional forms of rebellion to function, the musical
+                  counter-culture of this nascent era must be radically less fixed in step.</p>
+                <p style="margin-bottom: 10px">Power and culture are in a contradictory process of becoming simultaneously diffuse and concentrated. As power becomes
+                  filtered through a singular techno-economic process, yet survives on a mechanism of granular segmentation, culture is
+                  increasingly mediated through monolithic online platforms while being expressed through increasingly fragmented
+                  microscenes. AI has an algorithmically-driven teleological imperative to segment and classify artistic production and
+                  cultural identities into data-commodities, driving this process further.</p>
+                <p style="margin-bottom: 10px">The result of these processes is a culture in the West that presents as a diffuse granular flow of micro-identities
+                  which manifest too transiently to grasp and reform. These conditions render traditional strategies of détournement
+                  obsolete. As systems of control become entrenched in transient and highly-subdivided cultural mechanisms, new forms of
+                  subversion become necessary.</p>
+                <p style="margin-bottom: 10px">Music's interoperability and resistance to fixation make it uniquely suited for navigating these fractured territories
+                  by forming unclassifiable assemblages as models for resistance. Performance emerges as a critical space where these
+                  assemblages can be constructed, deconstructed, and experienced in their necessary immediacy.
+                  Resistance is proposed as an adoption of tactical incoherence by selectively embracing cultural and sonic
+                  contradictions that cannot be resolved through traditional frameworks. Rather than seeking retreat or continuing
+                  exhausted deconstruction, this positive engagement with cultural breakdown finds opportunities within incoherence
+                  itself, suggesting new possibilities for human expression and connection in this rapidly forming era.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="dsp" id="a0.gest">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">A0.gest</h3>
+              </div>
+              <div class="portfolio-date">2024</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                DSP
+              </div>
+              <div class="portfolio-media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TLksg-Jzrtc?si=dAsdmlSdqVV1mAeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Max for Live device</p>
+                <p style="margin-bottom: 10px">The first release for my DSP studio, Aleph Null. A0.gest is a Max for Live device that uses the acceleration, position, 3D rotation, and cardinal direction of any smartphone to
+                  modulate parameters in Ableton Live, as well as allowing the touchscreen to be used as a 2-dimensional matrix modulator.</p>
+                <p style="margin-bottom: 10px">Each sensor has a discrete map button assigned to each of its axes for a total of 24 mappable inputs,
+                  along with a unique real-time visualizer for all 5 of its sensors. Each axis has controls to set its
+                  range, and each sensor has a dedicated smoothing slider to smooth out the incoming signal.</p>
+                <p>A0.gest also supports input from IoT sensors and any device capable of sending OSC.</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://a0alephnull.github.io/" target="_blank" class="portfolio-link">
+                  Aleph Null Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="performance" id="eventhorizon">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Event Horizon</h3>
+              </div>
+              <div class="portfolio-date">2024</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                Performance
+              </div>
+              <div class="portfolio-media">
+                <img class="portfolio-img" src="../images/eh-1.JPG">
+                <img class="portfolio-img" src="../images/eh-2.JPG">
+                <img class="portfolio-img" src="../images/eh-3.JPG">
+                <img class="portfolio-img" src="../images/eh-4.JPG">
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Live performance with Fitnesss, VVXXII, 011668, & Cel Genesis</p>
+                <p style="margin-bottom: 10px">This performance was the debut of my <i>Blindsight</i> device, which was used with live input violin. The violin input was fed into Ableton Live via a piezo microphone, which was then processed by a modified form of my A0.gest Max for Live device. The <i>Blindsight</i> device was mounted on the wrist of my bow arm, and each of its 10 sensors were mapped to various parameters within Ableton Live that were modulating the incoming violin signal.</p>
+                <p style="margin-bottom: 10px">This allowed for frenetic movement to directly modify the live sound, which in turn informed the movement, forming a closed-loop between the instrument and its processing. Thrashing violent movement was combined with extended scordatura techniques to produce extreme and highly-processed timbres while gradually destroying the violin and bow throughout the process of the performance. As the violin became more damaged, its timbre deteriorated from aggressive and angular until the instrument failed to produce more than soft accidental noises, which continued to be modulated and rephrased through movement until the completion of the performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="music" id="cor">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Cascades of Refinement</h3>
+              </div>
+              <div class="portfolio-date">2023</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                Music
+              </div>
+              <div class="portfolio-media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LokD8muAvWI?si=VHHEHS2D69IKRcx6"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio-media">
+                <img class="portfolio-img"  src="../images/cor-cd.png">
+                <img class="portfolio-img"  src="../images/cor-tape.png">
+              </div>
+              <div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Debut EP released on Important Records</p>
+                <p style="margin-bottom: 10px">The techniques that defined Parish's influential early sound have been
+                  refined into a flawless hybrid of analog and
+                  digital textures which give his post-minimalist compositions an unmistakably personal expressivity.
+                </p>
+                <p style="margin-bottom: 10px">Classical instruments are mutilated and transmuted into razor-sharp
+                  shards of glass suspended on piano wire above
+                  warped opalescent metal while never losing sight of their tonal integrity. Much like the impartial
+                  juxtaposition
+                  Parish employs in his timbral exploration, each composition explores the concepts of beauty and
+                  gentleness through and
+                  with extremity, violence, and chaos as equal counterparts, with each successive piece refining and
+                  relieving the
+                  artificial tension between these states. Employing use of the Una Corda, prepared piano, bowed piano,
+                  plucked piano,
+                  harpsichord, church organ, untuned violin, voice, synthesizers, and resampled field recordings,
+                  Cascades of Refinement
+                  lies somewhere in the indefinite space between acoustic and electronic and is beholden to neither.</p>
+                <p style="margin-bottom: 10px">Parish's initial electroacoustic experiments with piano and strings
+                  were interrupted by the pandemic lockdown when he
+                  was limited to sampled instrumentation and digital processing available on a computer. Out of this
+                  necessity evolved
+                  an appreciation for the incidental nature of digitally sampled acoustic instrumentation and the
+                  unpredictability of
+                  its interaction with digital signal processing.</p>
+                <p style="margin-bottom: 10px">As work on Cascades of Refinement continued and acoustic recording was
+                  reintroduced, the focus turned to the tension
+                  between recorded and sampled instrumentation, with the goal of integrating the two into a singular
+                  indistinguishable
+                  material to be warped and shaped together. Each of the four pieces of the Cascade series explores this
+                  tension,
+                  successively integrating and collapsing their distinction with each piece.</p>
+                <p>The subtle artifacts of digital processing and incidental mechanical sounds of the acoustic are
+                  amplified and given
+                  presence alongside the tonal elements of each piece until a point of indivisibility is reached. The
+                  sound of a bow
+                  scraping along a string or a granular buffer freezing are neither discarded nor hidden, but selected
+                  as the ripest
+                  material to accompany and structure each composition. Cascades of Refinement is a dialogue between
+                  organic and
+                  digital, between the mercurial and infinitely reproducible, not as opposites, but as mereologically
+                  cohabiting
+                  counterparts with equal expressivity.</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://importantrecords.com/products/parish-cascades-of-refinement-cd" target="_blank" class="portfolio-link">
+                  View on Important Records
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="installation" id="irreductions">
+          <div class="portfolio-header-card">
+            <div class="portfolio-header-row">
+              <div class="portfolio-title-section">
+                <h3 class="portfolio-title-card">Irreductions</h3>
+              </div>
+              <div class="portfolio-date">2023</div>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-content-inner">
+              <div class="portfolio-meta"></div>
+              <div class="portfolio-category">
+                Installation
+              </div>
+              <div class="portfolio-media">
+                <img class="portfolio-img" src="../images/irr-schematic.png">
+                <img class="portfolio-img" src="../images/irr-1.jpg">
+                <img class="portfolio-img" src="../images/irr-2.jpg">
+                <video class="portfolio-img" controls>
+                  <source src="../images/irr-vid.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div class="portfolio-description">
+                <p style="margin-bottom: 10px; font-family: DMSans Bold;">Spatial audiovisual installation showcased at Gray Area, San Francisco in 2023 as part of the Creative Coding Intensive Exhibition and in 2025 in an updated version at the Intersection of Art and Technology - Corporeal Exhibition</p>
+                <p style="margin-bottom: 10px">Irreductions is an experiment in positive feedback between the human brain and its external representation.
+                  Using a modified electroencephalogram (EEG) that measures the electrical activity of the brain,
+                  the participant's brainwaves are translated into sonic data in the form of live generative speech and
+                  sound using
+                  realtime
+                  neural audio synthesis. This sound is then spatialized in quadraphonic sound around the participant
+                  with each location
+                  in space
+                  corresponding to activity within discrete regions of the frontal lobe associated with higher level
+                  executive
+                  function. At the same time, a live 3D audio-reactive particle system is projected around the user.
+                  This allows
+                  the participant to interface with their own brain activity through sound and visuals.</p>
+                <p style="margin-bottom: 10px">As the participant's thought processing
+                  increases, so too does the corresponding auditory representation of their frontal lobe, which upon
+                  being heard by the
+                  participant, will then be incorporated into their own frontal lobe activity and fed back into the
+                  audio, blurring the
+                  lines between the participant's neural activity and its external representation.</p>
+                <p style="margin-bottom: 10px">The name Irreductions derives from a treatise by the philosopher Bruno
+                  Latour of the same
+                  name in which he establishes
+                  a metaphysical network of interconnected actors, human and inhuman, none of which can be considered
+                  either reducible
+                  or irreducible to the others. Irreductions seeks to capture this rhizomatic quality between the
+                  internal qualitative
+                  experience of the participant and the way in which this experience is represented in the external
+                  world.
+                <p>This work is part of an ongoing project to explore methods of collapsing the distance between the
+                  body and its
+                  expression through sound and music.</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="https://photos.app.goo.gl/qkd66bQUGoQe3sxS6" target="_blank" class="portfolio-link">
+                  2023 Documentation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="../main.js"></script>
+
+</html>
