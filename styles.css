@@ -219,6 +219,7 @@ p a {
   -webkit-backdrop-filter: none;
   transition: all 0.3s ease;
   height: calc(60px * 1.618);
+  min-height: 80px;
 }
 
 .main-nav.scrolled {
@@ -422,9 +423,11 @@ body:not(.home-page) .nav-logo a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 2rem 2rem;
+  padding: 120px 2rem 2rem;
   position: relative;
   z-index: 10;
+  margin-top: 0;
+  box-sizing: border-box;
 }
 
 .about-container {
@@ -1228,7 +1231,15 @@ body:not(.home-page) .nav-logo a:hover {
 @media only screen and (max-width: 768px) {
   .main-nav {
     padding: 2rem 2rem;
-    height: 50px;
+    height: 70px;
+    min-height: 70px;
+  }
+
+  .main-container {
+    padding-top: 100px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .main-nav.email-expanded .nav-logo {
@@ -1269,15 +1280,15 @@ body:not(.home-page) .nav-logo a:hover {
     left: 0;
   }
   
-  .main-container {
-    padding: 70px 1.5rem 1.5rem;
-  }
-  
   .logotype {
     max-height: 80px;
     margin-bottom: 1.5rem;
   }
   
+  .live-header:first-child {
+    margin-top: 20px;
+  }
+
   .hero-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1544,8 +1555,9 @@ body:not(.home-page) .nav-logo a:hover {
 
 @media only screen and (max-width: 480px) {
   .main-nav {
-    padding: 0.75rem 1rem;
-    height: 50px;
+    padding: 1rem 1rem;
+    height: 60px;
+    min-height: 60px;
   }
   
   .nav-menu {
@@ -1558,7 +1570,14 @@ body:not(.home-page) .nav-logo a:hover {
   }
   
   .main-container {
-    padding: 60px 1rem 1rem;
+    padding-top: 90px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .live-header:first-child {
+    margin-top: 30px;
   }
 
   .hero-links {
