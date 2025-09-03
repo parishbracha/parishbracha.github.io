@@ -1236,10 +1236,7 @@ body:not(.home-page) .nav-logo a:hover {
   }
 
   .main-container {
-    padding-top: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 120px 1.5rem 1.5rem;
   }
 
   .main-nav.email-expanded .nav-logo {
@@ -1570,10 +1567,7 @@ body:not(.home-page) .nav-logo a:hover {
   }
   
   .main-container {
-    padding-top: 90px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding: 110px 1rem 1rem;
   }
   
   .live-header:first-child {
